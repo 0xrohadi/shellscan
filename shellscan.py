@@ -25,7 +25,7 @@ def exploit(url, list_password):
     
     req = requests.get(host).status_code
     if req == 200:
-        print("\33[92m[+] \33[0m{;<55} status: \33[92m{:<20}".format(host, req))
+        print("\33[92m[+] \33[0m{:<55} status: \33[92m{:<20}".format(host, req))
     else:
         print("\33[91m[-] \33[0m{:<55} status: \33[91m{:<20}".format(host, req))
 
